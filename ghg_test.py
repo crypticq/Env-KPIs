@@ -25,14 +25,14 @@ data_ghg = pd.DataFrame(
 
 
 
-# Create the figure
+
 fig = column_and_line(
     data_frame=data_ghg,
     x="Year",
     y_column=["Scope 1", "Scope 2", "Scope 3"],  # Columns for bar chart
     y_line= 'Total GHG Manufacturing (Scopes 1, 2 and 3)')
 
-# Create the Vizro page
+
 page = vm.Page(
     title="GHG Emissions",
     components=[
@@ -51,8 +51,7 @@ page = vm.Page(
     ],
 )
 
-# Create the dashboard
+
 dashboard = vm.Dashboard(pages=[page])
 
-# Build and run the dashboard
 Vizro().build(dashboard).run()
