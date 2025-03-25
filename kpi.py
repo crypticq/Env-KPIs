@@ -7,8 +7,6 @@ import pandas as pd
 # Create a DataFrame for KPI data
 df_KPI = pd.DataFrame(
     {
-        "CO2 Yield KPI": [60],
-        "Co2 Target": [60],  
         "WUR KPI": [1.50],
         "WUR target": [1.49],  
         "EUR KPI": [0.29],
@@ -20,25 +18,7 @@ df_KPI = pd.DataFrame(
 page = vm.Page(
     title="Water & ENERGY USE & Co2 Yeild KPIs",
     components=[
-        vm.Figure(
-            figure=kpi_card(
-                data_frame=df_KPI,
-                value_column='CO2 Yield KPI',
-                value_format="{value:.2f}",
-                icon="Co2",
-                title="CO2 Yield",
-            )
-        ),
-        vm.Figure(
-            figure=kpi_card_reference(
-                data_frame=df_KPI,
-                value_column='CO2 Yield KPI',
-                reference_column="Co2 Target",
-                value_format="{value:.2f}",  # Added a comma here
-                icon="target",
-                title="CO2 Yield Target"
-            )
-        ),
+ 
         ################################################################
         # WUR
         ##################################################################
