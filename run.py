@@ -83,8 +83,6 @@ page_four=vm.Page(
 
 df_KPI=pd.DataFrame(
     {
-        "CO2 Yield KPI": [60],
-        "Co2 Target": [60],
         "WUR KPI": [1.50],
         "WUR target": [1.49],
         "EUR KPI": [0.29],
