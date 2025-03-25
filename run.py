@@ -96,23 +96,6 @@ df_KPI=pd.DataFrame(
 KPI_summary=vm.Page(
     title="Water & ENERGY USE & Co2 Yeild KPIs",
     components=[
-        vm.Figure(
-            figure=kpi_card(
-                data_frame=df_KPI,
-                value_column='CO2 Yield KPI',
-                icon="Co2",
-                title="CO2 Yield",
-            )
-        ),
-        vm.Figure(
-            figure=kpi_card_reference(
-                data_frame=df_KPI,
-                value_column='CO2 Yield KPI',
-                reference_column="Co2 Target",
-                icon="target",
-                title="CO2 Yield Target"
-            )
-        ),
         ################################################################
         # WUR
         ##################################################################
